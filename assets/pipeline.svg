@@ -1,0 +1,56 @@
+<svg width="1200" height="270" viewBox="0 0 1200 270" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="90" y1="40" x2="1104" y2="234" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#071321"/>
+      <stop offset="1" stop-color="#102645"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#FDB347"/>
+      <stop offset="0.5" stop-color="#FF6B7E"/>
+      <stop offset="1" stop-color="#53C9FF"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="270" rx="28" fill="url(#bg)"/>
+  <text x="48" y="56" fill="white" font-size="28" font-weight="700" font-family="Helvetica, Arial, sans-serif">Render Pipeline</text>
+  <text x="48" y="86" fill="#8CB6ED" font-size="17" font-family="Helvetica, Arial, sans-serif">The program turns command-line input into an interactive pixel buffer one point of the complex plane at a time.</text>
+
+  <g transform="translate(48 122)">
+    <rect width="182" height="92" rx="20" fill="#122849"/>
+    <text x="22" y="34" fill="#DCE7FF" font-size="20" font-weight="700" font-family="Helvetica, Arial, sans-serif">1. Parse Input</text>
+    <text x="22" y="62" fill="#8CB6ED" font-size="15" font-family="Helvetica, Arial, sans-serif">Select set and validate</text>
+    <text x="22" y="82" fill="#8CB6ED" font-size="15" font-family="Helvetica, Arial, sans-serif">Julia parameters</text>
+  </g>
+  <path d="M246 168H294" stroke="url(#accent)" stroke-width="6" stroke-linecap="round"/>
+
+  <g transform="translate(310 122)">
+    <rect width="182" height="92" rx="20" fill="#122849"/>
+    <text x="22" y="34" fill="#DCE7FF" font-size="20" font-weight="700" font-family="Helvetica, Arial, sans-serif">2. Map Pixels</text>
+    <text x="22" y="62" fill="#8CB6ED" font-size="15" font-family="Helvetica, Arial, sans-serif">Convert screen space</text>
+    <text x="22" y="82" fill="#8CB6ED" font-size="15" font-family="Helvetica, Arial, sans-serif">to complex coordinates</text>
+  </g>
+  <path d="M508 168H556" stroke="url(#accent)" stroke-width="6" stroke-linecap="round"/>
+
+  <g transform="translate(572 122)">
+    <rect width="182" height="92" rx="20" fill="#122849"/>
+    <text x="22" y="34" fill="#DCE7FF" font-size="20" font-weight="700" font-family="Helvetica, Arial, sans-serif">3. Iterate</text>
+    <text x="22" y="62" fill="#8CB6ED" font-size="15" font-family="Helvetica, Arial, sans-serif">Run the escape-time</text>
+    <text x="22" y="82" fill="#8CB6ED" font-size="15" font-family="Helvetica, Arial, sans-serif">formula until divergence</text>
+  </g>
+  <path d="M770 168H818" stroke="url(#accent)" stroke-width="6" stroke-linecap="round"/>
+
+  <g transform="translate(834 122)">
+    <rect width="182" height="92" rx="20" fill="#122849"/>
+    <text x="22" y="34" fill="#DCE7FF" font-size="20" font-weight="700" font-family="Helvetica, Arial, sans-serif">4. Color</text>
+    <text x="22" y="62" fill="#8CB6ED" font-size="15" font-family="Helvetica, Arial, sans-serif">Use sine-based smooth</text>
+    <text x="22" y="82" fill="#8CB6ED" font-size="15" font-family="Helvetica, Arial, sans-serif">palette interpolation</text>
+  </g>
+  <path d="M1032 168H1080" stroke="url(#accent)" stroke-width="6" stroke-linecap="round"/>
+
+  <g transform="translate(1096 122)">
+    <rect width="56" height="92" rx="20" fill="#122849"/>
+    <text x="15" y="36" fill="#DCE7FF" font-size="18" font-weight="700" font-family="Helvetica, Arial, sans-serif">5</text>
+    <text x="15" y="60" fill="#8CB6ED" font-size="14" font-family="Helvetica, Arial, sans-serif">MLX</text>
+    <text x="15" y="80" fill="#8CB6ED" font-size="14" font-family="Helvetica, Arial, sans-serif">Draw</text>
+  </g>
+</svg>
